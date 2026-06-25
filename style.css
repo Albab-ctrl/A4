@@ -1125,3 +1125,293 @@ justify-content: space-between;
    color: white;
    z-index: 2;
 }
+/* project-3 */
+.main3{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3{
+   overflow: hidden;
+    width: 67%;
+    height:100%; 
+    background-color: #FEFEFE;
+    padding: 10px 55px 18px 55px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows:10fr 18fr 50fr 9fr 13fr;
+     grid-template-areas: 
+     "s3-header s3-header s3-header s3-header s3-header"
+     "s3-content s3-content s3-content s3-content s3-content"
+     "s3-left1-image s3-left2-image s3-middle-image s3-right1-image s3-right2-image"
+     "s3-end-content s3-end-content s3-end-content s3-end-content s3-end-content"
+     "s3-foot s3-foot s3-foot s3-foot s3-foot";
+}
+.s3-header{
+   background-color:transparent;
+   grid-area: s3-header ;
+    border-bottom:1px solid #E8E8E8  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s3-header h2{
+   /* font-style: italic; */
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+}
+.s3-header .s3-header-links{
+   display: flex;
+   gap: 20px;
+}
+.s3-header .s3-header-links a{
+   text-decoration: none;
+   color: #000;
+   font-size: 14px;
+   font-weight: 500;
+}
+.s3-header-icons{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.s3-header-icons .ri-shopping-cart-line{
+   padding: 8px;
+   background-color: #000;
+   border: none;
+   color: white;
+   border-radius: 50%;
+   font-size: 12px;
+}
+
+.s3-content{
+   background-color: transparent;
+   grid-area: s3-content;
+    border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.s3-content .s3-img{
+   align-self:center;
+   position: relative;
+   top: -30px;
+}
+.s3-content h1{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 45px;
+   text-align: center;
+   line-height: 50px;
+}
+.s3-content-left{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 38px;
+}
+.s3-content-left small{
+   font-size: 11px;
+}
+.s3-left1-image{
+   background-color:transparent;
+   grid-area: s3-left1-image;
+    border-radius: 20px;
+    padding: 8px 0px 0px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content:space-between;
+   
+}
+.s3-left1-image h1{
+   transform: rotate(180deg);
+   position: relative;
+   bottom: -35px;
+   font-size: 60px;
+}
+.s3-left1-div{
+   width: 100%;
+   height: 50%;
+   background-color:#FDB14C;
+   border-radius: 20px;
+      background-image: url(./s3-left1-img.png);
+   background-position: center;
+   background-size: cover;
+}
+.s3-left2-image{
+   background-color:transparent;
+   grid-area: s3-left2-image;
+    border-radius: 20px;
+    display: flex;
+    padding-bottom: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+   gap: 10px;
+    justify-content: space-around;
+
+}
+.s3-left2-child1{
+   width: 100%;
+   height: 40%;
+   background-color: #F0D7AB;
+   background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRZkzoyR-ibcmzUPOjB1En_8UsRIwm6923hcuosSedIOlhxMXx);
+   background-position: center 0%;
+   background-size: cover;
+   border-radius: 20px;
+}
+.s3-left2-child2{
+   width: 100%;
+   height: 50%;
+   background-color: #25B8AE;
+   border-radius: 20px;
+      background-position: center -10%;
+      background-repeat: no-repeat;
+      background-size: cover;
+   background-image: url(https://i0.wp.com/sidewalkhustle.com/wp-content/uploads/2016/09/golf-3.jpg?resize=800,1056&ssl=1);
+}
+.s3-middle-image{
+   background-color:transparent;
+   grid-area: s3-middle-image;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.s3-middle-image img{
+   position: absolute;
+   left: 21%;
+   top: -14.5%;
+}
+.s3-mid-img{
+   width: 100%;
+   height: 95%;
+   border-radius: 20px;
+   background-color: #FEDD61;
+   background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ24PinUVyzTUDlPZVUqeEfXI1kI0v2FUtb0BF_BR-zGSgWj-5r);
+   background-position: 30% 0%;
+   background-size: cover;
+}
+.s3-right1-image{
+   background-color: transparent;
+   grid-area: s3-right1-image;
+    border-radius: 20px;
+    padding-top: 15px;
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.s3-r1-child1{
+   width: 100%;
+   height: 50%;
+   border-radius: 20px;
+   background-color: #FE8433;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqg0-QNXMhOStKrpn4DvqkMgldO6epKGkbg9EmPU8IlYD1GBQhRuw8Gox&s=10);
+   background-position: center 0%;
+   background-size: cover;
+}
+.s3-r1-child2{
+   width: 100%;
+   height: 35%;
+   border-radius: 20px;
+   background-color: #00A0EE;
+   background-image: url(https://i.pinimg.com/236x/cb/40/c5/cb40c59e3295f41d84e52c5896f2495c.jpg);
+    background-position: center 10%;
+   background-size: cover;
+}
+.s3-right2-image{
+   background-color: transparent;
+   grid-area: s3-right2-image;
+    border-radius: 20px;
+   
+   }
+
+.s3-r2-child2{
+   width: 100%;
+   height: 52%;
+   background-color: transparent;
+   border-radius: 20px;
+
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+.s3-r2-cchild1{
+    width: 100%;
+   height: 100%;
+   background-color: #75B58D;
+   border-radius: 20px;
+ background-image: url(./lstboy.png);
+ background-position: center 25% ;
+ background-size: cover;
+}
+.s3-r2-child3 img{
+   position: relative;
+   left: 70%;
+}
+.s3-end-content{
+   background-color: transparent;
+   grid-area: s3-end-content;
+    border-radius: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.s3-foot{
+   background-color: transparent;
+   grid-area: s3-foot;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.s3-foot-center{
+   display: flex;
+   align-items: center;
+  
+}
+.s3-foot-center .s3-foot-dash{
+   position: relative ;
+   top: -20px;
+   /* left: 90%; */
+}
+.s3-foot-center button{
+   padding: 10px 20px;
+   background-color:#f5c7e2;
+   border:none ;
+   border-radius: 30px;
+   transition: all ease-in 0.2s;
+}
+.s3-foot-center button:hover{
+   padding: 8px 18px;
+   font-size: 12px;
+}
+.s3-foot-end{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.s3-foot-end h1{
+   font-size: 50px;
+   font-weight: 300;
+}
+.s3-foot-end i{
+   padding: 10px;
+   background-color: #000;
+   color: white;
+   border: none;
+   transition: all ease 0.2s;
+   border-radius: 50%;
+}
+.s3-foot-end i:hover{
+   padding: 13px;
+}
